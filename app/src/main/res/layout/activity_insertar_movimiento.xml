@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@color/bgColor"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+    tools:context=".Activities.InsertarMovimiento">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Movimientos"
+        android:fontFamily="cursive"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_marginBottom="5dp"
+        android:id="@+id/txtDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="20dp"
+        android:hint="Descripcion del Movimiento"
+        android:background="@drawable/config_edit"
+        android:inputType="text" />
+
+    <EditText
+        android:layout_marginBottom="5dp"
+        android:id="@+id/txtValor"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="20dp"
+        android:hint="Ingresa el Valor"
+        android:background="@drawable/config_edit"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:layout_marginBottom="5dp"
+        android:layout_height="40dp"
+        android:paddingLeft="20dp"
+        android:background="@drawable/config_edit"
+        android:id="@+id/txtFecha"
+        android:layout_width="match_parent"
+        android:hint="Ingresa una Fecha"
+        android:inputType="text" />
+
+    <EditText
+        android:layout_marginBottom="5dp"
+        android:layout_height="40dp"
+        android:paddingLeft="20dp"
+        android:background="@drawable/config_edit"
+        android:id="@+id/txtHora"
+        android:layout_width="match_parent"
+        android:hint="Ingresa la Hora"
+        android:inputType="text" />
+    <Spinner
+        android:id="@+id/spinnerGestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown" />
+    <Spinner
+        android:id="@+id/spinnerTipoMovimiento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+
+
+        <Spinner
+            android:id="@+id/spinnerCategoria"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown" />
+
+
+        <Button
+            android:id="@+id/accionNuevaCategoria"
+            android:layout_width="150dp"
+            android:background="@drawable/config_button"
+            android:textColor="#fff"
+            android:layout_height="wrap_content"
+            android:onClick="accionNuevaCategoria"
+            android:text="Nueva Categoria" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/guardarTramite"
+        android:layout_width="200dp"
+        android:background="@drawable/config_button"
+        android:textColor="#fff"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:onClick="accionRegistrarMovimiento"
+        android:text="Registrar" />
+
+
+
+
+
+</LinearLayout>

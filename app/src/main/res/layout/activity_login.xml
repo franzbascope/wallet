@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@color/white"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+    tools:context=".Activities.Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/wallet" />
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#5d4037"
+            android:text="My Wallet"
+            android:fontFamily="cursive"
+            android:textAlignment="center"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_marginBottom="20dp"
+        android:id="@+id/txtNick"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="20dp"
+        android:hint="  Usuario"
+        android:background="@drawable/config_edit"
+        android:drawableLeft="@drawable/ic_action_account_circle"
+        android:inputType="text" />
+
+    <EditText
+        android:layout_marginBottom="20dp"
+        android:layout_height="60dp"
+        android:paddingLeft="20dp"
+        android:background="@drawable/config_edit"
+        android:id="@+id/txtPassword"
+        android:drawableLeft="@drawable/ic_action_lock"
+        android:layout_width="match_parent"
+        android:hint="  Password"
+        android:inputType="textPassword" />
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/guardarTramite"
+        android:layout_width="200dp"
+        android:background="@drawable/config_button"
+        android:textColor="#fff"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:onClick="loginAccion"
+        android:text="Entrar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:text="No tienes Cuenta? Crea Una"
+        android:textAlignment="center"
+        android:textColor="#4c0a0a"
+        android:onClick="registroAccion"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+
+
+</LinearLayout>

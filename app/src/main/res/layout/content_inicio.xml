@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activities.InicioActivity"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_inicio">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/wallet" />
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#5d4037"
+            android:text="My Wallet"
+            android:fontFamily="cursive"
+            android:textAlignment="center"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alignmentMode="alignBounds"
+        android:layout_marginTop="40dp"
+        android:columnCount="2"
+        android:rowCount="3">
+
+        <Button
+            android:id="@+id/accionNuevaGestion"
+            android:background="#4271f4"
+            android:textColor="#fff"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/editText"
+            android:layout_centerHorizontal="true"
+            android:onClick="accionNuevaGestion"
+            android:text="Nueva Gestion"
+            />
+        <Button
+            android:layout_width="200dp"
+            android:background="#f4414d"
+            android:textColor="#fff"
+            android:layout_height="100dp"
+            android:layout_below="@+id/editText"
+            android:layout_centerHorizontal="true"
+            android:onClick="accionNuevoMovimiento"
+            android:text="Nuevo Movimiento" />
+        <Button
+            android:layout_width="200dp"
+            android:background="#41f461"
+            android:textColor="#fff"
+            android:layout_height="100dp"
+            android:layout_below="@+id/editText"
+            android:layout_centerHorizontal="true"
+            android:onClick="accionNuevaCategoria"
+            android:text="Nueva Categoria" />
+        <Button
+            android:layout_width="200dp"
+            android:background="#e26a02"
+            android:textColor="#fff"
+            android:layout_height="100dp"
+            android:layout_below="@+id/editText"
+            android:layout_centerHorizontal="true"
+            android:onClick="accionMovimientos"
+            android:text="Ver Movimientos" />
+        <Button
+            android:layout_width="200dp"
+            android:background="#d82929"
+            android:textColor="#fff"
+            android:layout_height="100dp"
+            android:layout_below="@+id/editText"
+            android:layout_centerHorizontal="true"
+            android:onClick="accionGestiones"
+            android:text="Ver Gestiones" />
+
+
+
+    </GridLayout>
+
+
+
+
+</LinearLayout>
